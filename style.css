@@ -1,6 +1,6 @@
 body {
 	background-color: beige;
-	height: 100%;
+	
 }	
 
 nav {
@@ -17,9 +17,11 @@ header {
 main {
 	background-color: cyan;
 	margin-left: 5%;
-	margin-top: 2%;
+	margin-top: 15%;
 	width: 45%;
 	float: left;
+	margin-bottom: 10%;
+	padding:5px
 }
 footer {
 	width: 25%;
