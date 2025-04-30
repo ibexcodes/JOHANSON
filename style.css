@@ -5,14 +5,25 @@ body {
 
 nav {
 	background-color: cyan;
-	width: 45px;
+	width: 100%;
 	float: left;
+	position: fixed;
+	height: 20%;
+}
+.sidenav {
+background-color: red;
+	width: 15%;
+	float: left;
+	position: fixed;
+	height: 85%;
+	bottom: 0%;
+
 }
 header {
 	background-color: darkturquoise;
 	margin: 12px; 
 	text-align: center;
-	text-decoration-color: gold;
+
 }
 main {
 	background-color: cyan;
