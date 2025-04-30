@@ -1,6 +1,0 @@
-body{
-	background: #999;
-	margin: 0 15%;
-	border: solid thin #f00;
-	padding: 10px 25px;
-}
