@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback - Hotel Ibex</title>
+  <link rel="stylesheet" href="feedback.css" />
+</head>
+<body>
+
+<main class="feedback-container">
+  <h2>Thank you for your reservation!</h2>
+  <p>We’d love to hear your thoughts. Please rate your experience:</p>
+
+  <form id="feedbackForm" class="feedback-form">
+    <label for="rating">Your Rating:</label>
+    <div class="stars">
+      <input type="radio" name="rating" value="5" id="star5"><label for="star5">★</label>
+      <input type="radio" name="rating" value="4" id="star4"><label for="star4">★</label>
+      <input type="radio" name="rating" value="3" id="star3"><label for="star3">★</label>
+      <input type="radio" name="rating" value="2" id="star2"><label for="star2">★</label>
+      <input type="radio" name="rating" value="1" id="star1"><label for="star1">★</label>
+    </div>
+
+    <label for="comments">Additional Comments:</label>
+    <textarea name="comments" id="comments" rows="4" placeholder="Write your thoughts..."></textarea>
+
+    <button type="submit">Submit Feedback</button>
+  </form>
+</main>
+
+<script>
+  document.getElementById("feedbackForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // Prevent default form submission (for demonstration)
+
+    // Optionally, collect data here to submit via AJAX or process with backend
+
+    alert("Thank you for your feedback!");
+    // Redirect after 1.5 seconds
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 1500);
+  });
+</script>
+
+</body>
+</html>
+
+

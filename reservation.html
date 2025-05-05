@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hotel Ibex - Reservation</title>
+  <link rel="stylesheet" href="reservation.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Book Your Stay</h2>
+    <form id="reservationForm">
+      <label>Full Name:</label>
+      <input type="text" name="name" required />
+
+      <label>Email Address:</label>
+      <input type="email" name="email" required />
+
+      <label>Check-In:</label>
+      <input type="date" name="checkin" required />
+
+      <label>Check-Out:</label>
+      <input type="date" name="checkout" required />
+
+      <label>Room Type:</label>
+      <select name="room" required>
+        <option value="">Select Room</option>
+        <option value="Standard - 500 BWP">Standard - 500 BWP</option>
+        <option value="Deluxe - 800 BWP">Deluxe - 800 BWP</option>
+        <option value="Suite - 1200 BWP">Suite - 1200 BWP</option>
+      </select>
+
+      <label>Guests:</label>
+      <input type="number" name="guests" value="1" min="1" max="5" />
+      <label>Payment Method:</label>
+      <select name="payment" required>
+        <option value="Credit Card">Credit Card</option>
+        <option value="Mobile Money">Orange Money</option>
+        <option value="Mobile MOney">Myzaka</option>
+      </select>
+
+      <button type="submit">Pay & Confirm</button>
+    </form>
+  </div>
+
+  <script src="reservation.js"></script>
+</body>
+</html>
